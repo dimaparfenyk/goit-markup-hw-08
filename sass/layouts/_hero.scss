@@ -7,8 +7,18 @@
   padding: 200px 15px;
   margin: 0 auto;
 }
-
+.hero-section-content {
+  @media screen and (max-width: 1199px) {
+    width: 360px;
+    margin: 0 auto;
+  }
+}
 .hero-title {
+  @media screen and (max-width: 1199px) {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+
   color: var(--main-text-color);
   font-weight: 900;
   font-size: 44px;
