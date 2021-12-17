@@ -724,18 +724,14 @@ a {
   -webkit-text-fill-color: var(--main-text-color);
 }
 
-.portfolio {
-  padding-top: 77px;
-  padding-bottom: 94px;
-}
-
 .portfolio-title {
   display: none;
 }
 
-.portfolio-list {
+.portfolio-btn-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: start;
 }
 
 .portfolio-item:not(:last-child) {
@@ -743,9 +739,6 @@ a {
 }
 
 .portfolio-btn {
-  display: inline-block;
-  text-align: center;
-  min-width: 128px;
   padding: 6px 22px;
   border-radius: 4px;
   cursor: pointer;
