@@ -480,6 +480,7 @@ a {
 
 .team-image {
   width: 100%;
+  height: auto;
 }
 
 .team-member {
@@ -525,26 +526,62 @@ a {
   fill: currentColor;
 }
 
-.clients-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.clients-title {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-title {
+    margin-bottom: 50px;
+  }
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-left: -30px;
+  margin-bottom: -30px;
 }
 
 .clients-item {
-  width: 170px;
-  height: 92px;
-  margin-top: 50px;
   border: 1px solid #afb1b8;
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 
-.clients-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 480px) {
+  .clients-item {
+    width: 210px;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-item {
+    width: 226px;
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-item {
+    width: 170px;
+    flex-basis: calc(100% / 6 - 30px);
+  }
 }
 
 .clients-item > .clients-link:hover,
@@ -692,7 +729,7 @@ a {
   padding-bottom: 94px;
 }
 
-.portfolio > .title {
+.portfolio-title {
   display: none;
 }
 
@@ -708,6 +745,7 @@ a {
 .portfolio-btn {
   display: inline-block;
   text-align: center;
+  min-width: 128px;
   padding: 6px 22px;
   border-radius: 4px;
   cursor: pointer;
