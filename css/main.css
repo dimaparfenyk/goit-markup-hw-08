@@ -724,6 +724,11 @@ a {
   -webkit-text-fill-color: var(--main-text-color);
 }
 
+.portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .portfolio-title {
   display: none;
 }
@@ -844,12 +849,19 @@ a {
   left: 50%;
   transform: scale(1) rotate(0) translate(-50%, -50%);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .button-close {
