@@ -30,10 +30,6 @@
   }
 }
 
-.project-card:nth-child(-n + 6) {
-  margin-bottom: 30px;
-}
-
 .project-card-description {
   border: 1px solid var(--card-border-color);
   border-top: none;
@@ -58,6 +54,7 @@
 .project-card-thumb {
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .project-card-overlay {
