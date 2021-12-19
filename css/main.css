@@ -351,6 +351,12 @@ a {
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 1199px) {
+  .production {
+    display: none;
+  }
+}
+
 .production-item {
   margin-top: 50px;
 }
