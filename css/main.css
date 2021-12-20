@@ -197,11 +197,47 @@ a {
 
 .hero-section {
   background-color: var(--top-section-background-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-Img.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/hero-img-mob-1x.jpg");
+  background-size: cover;
   max-width: 1600px;
   width: 100%;
   padding: 200px 15px;
   margin: 0 auto;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-section {
+    background-color: var(--top-section-background-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/hero-img-mob-2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    background-color: var(--top-section-background-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/hero-img-tab-1x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-section {
+    background-color: var(--top-section-background-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/hero-img-tab-2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    background-color: var(--top-section-background-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/hero-Img.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-section {
+    background-color: var(--top-section-background-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/hero-Img-bg-2x.jpg");
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -735,6 +771,13 @@ a {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .portfolio-title {
   display: none;
 }
@@ -1026,10 +1069,17 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  font-size: 12px;
+  line-height: 1.16;
   color: var(--primary-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-container {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .checkbox-link {

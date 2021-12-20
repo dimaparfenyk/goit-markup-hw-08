@@ -140,9 +140,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  font-size: 12px;
+  line-height: 1.16;
+  @media screen and(min-width:1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
   color: var(--primary-text-color);
 }
 
