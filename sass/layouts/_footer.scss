@@ -1,21 +1,63 @@
 .footer {
   background-color: var(--top-section-background-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
-
 .footer-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 89px;
+    padding-left: 76px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .footer-nav {
-  margin-right: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+  & > .logo {
+    margin-bottom: 20px;
+  }
 }
 
 .footer-socials {
-  margin-right: 93px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
 
 .footer-text {
@@ -26,6 +68,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #fff;
+}
+.subscript-label {
+  margin-bottom: 20px;
 }
 
 .company-socials {
@@ -47,7 +92,8 @@
 .footer-contacts {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
   width: 230px;
 }
 
@@ -57,6 +103,25 @@
 
 .footer-logo {
   color: var(--main-text-color);
+}
+.footer-subscript {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media screen and(min-width:768px) {
+    margin-left: 93px;
+  }
+}
+.footer-subscript-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media screen and(min-width:1200px) {
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
 
 .company-adress {

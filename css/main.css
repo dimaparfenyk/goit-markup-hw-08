@@ -655,22 +655,72 @@ a {
 
 .footer {
   background-color: var(--top-section-background-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 89px;
+    padding-left: 76px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    flex-direction: row;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .footer-nav {
-  margin-right: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.footer-nav > .logo {
+  margin-bottom: 20px;
 }
 
 .footer-socials {
-  margin-right: 93px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-socials {
+    margin-left: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-socials {
+    margin-left: 70px;
+  }
 }
 
 .footer-text {
@@ -681,6 +731,10 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #fff;
+}
+
+.subscript-label {
+  margin-bottom: 20px;
 }
 
 .company-socials:not(:last-child) {
@@ -702,7 +756,8 @@ a {
 .footer-contacts {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
   width: 230px;
 }
 
@@ -712,6 +767,33 @@ a {
 
 .footer-logo {
   color: var(--main-text-color);
+}
+
+.footer-subscript {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-subscript {
+    margin-left: 93px;
+  }
+}
+
+.footer-subscript-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-subscript-container {
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
 
 .company-adress {
