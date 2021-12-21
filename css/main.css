@@ -224,13 +224,13 @@ a {
 }
 
 .hero-section {
-  background-color: var(--top-section-background-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/hero-img-mob-1x.jpg");
   background-size: cover;
   max-width: 1600px;
   width: 100%;
   padding: 200px 15px;
   margin: 0 auto;
+  background-color: var(--top-section-background-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/hero-img-mob-1x.jpg");
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
