@@ -59,6 +59,24 @@ a {
   padding-right: 15px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .logo {
   color: var(--accent-color);
   font-family: Raleway;
@@ -70,6 +88,11 @@ a {
 
 .logo-header {
   color: var(--primary-title-color);
+}
+
+.header {
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .nav-container {
@@ -234,14 +257,14 @@ a {
 @media screen and (min-width: 1200px) {
   .hero-section {
     background-color: var(--top-section-background-color);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/hero-Img.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/hero-img.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-section {
     background-color: var(--top-section-background-color);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/hero-Img-bg-2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/hero-img-bg-2x.jpg");
   }
 }
 
