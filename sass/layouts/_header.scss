@@ -1,37 +1,13 @@
 .header {
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-
 .nav-container {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   border-bottom: 1px solid #ececec;
-}
-.header-btn {
-  width: 40px;
-  height: 40px;
-  border: none;
-  background-color: inherit;
-  margin: auto;
-
-  &:hover,
-  &:focus {
-    fill: var(--accent-color);
-  }
-}
-.mob-menu {
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 5;
-  background-color: #ffffff;
-}
-.mob-menu-close {
-  display: block;
-  margin-left: auto;
 }
 .nav-page-item + .nav-page-item {
   margin-left: 50px;
@@ -128,4 +104,86 @@
 .icon-link {
   margin-right: 10px;
   fill: currentColor;
+}
+
+.header-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: inherit;
+  margin-left: auto;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  padding-top: 10px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  padding-right: 15px;
+  background-color: #ffffff;
+}
+.mob-menu-item,
+.contact-menu-item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+.mob-menu-item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+}
+.mob-menu-link {
+  color: #212121;
+}
+.mob-menu-list {
+  margin-bottom: auto;
+}
+.contact-menu {
+  margin-bottom: 64px;
+}
+.contact-menu-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.contact-menu-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: rgba(117, 117, 117, 1);
+}
+.header-socials-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-social-link {
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+}
+
+.mob-menu-close {
+  display: block;
+  margin-left: auto;
 }
