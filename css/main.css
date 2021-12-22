@@ -101,6 +101,13 @@ a {
   flex-direction: row;
   align-items: center;
   border-bottom: 1px solid #ececec;
+  overflow: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-container.logo {
+    margin-right: 88px;
+  }
 }
 
 .nav-page-item + .nav-page-item {
@@ -108,10 +115,15 @@ a {
 }
 
 .nav-page-list {
-  display: flex;
-  flex-direction: row;
-  margin-left: 93px;
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-page-list {
+    display: flex;
+    flex-direction: row;
+    margin-left: 93px;
+  }
 }
 
 .nav-page-link {
@@ -156,14 +168,25 @@ a {
 }
 
 .nav-contact {
-  display: flex;
-  margin-left: auto;
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .nav-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-contact {
+    flex-direction: row;
+  }
+}
+
 .nav-contact-link {
-  display: flex;
-  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -189,8 +212,17 @@ a {
   color: var(--accent-color);
 }
 
-.nav-contact-item + .nav-contact-item {
-  margin-left: 50px;
+@media screen and (min-width: 768px) {
+  .nav-contact-item + .nav-contact-item {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-contact-item + .nav-contact-item {
+    margin-left: 30px;
+    margin-top: 0;
+  }
 }
 
 .icon-link {
@@ -208,6 +240,12 @@ a {
 
 .header-btn:hover, .header-btn:focus {
   fill: var(--accent-color);
+}
+
+@media screen and (min-width: 767px) {
+  .header-btn {
+    display: none;
+  }
 }
 
 .mob-menu {
@@ -326,37 +364,30 @@ a {
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .hero-section-content {
-    width: 360px;
-    margin: 0 auto;
-  }
-}
-
 .hero-title {
-  color: var(--main-text-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  max-width: 660px;
+  font-size: 26px;
+  line-height: 1.62;
   margin: 0px auto;
   text-align: center;
+  color: var(--main-text-color);
+  text-transform: uppercase;
+  max-width: 360px;
+  margin-bottom: 30px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .hero-title {
-    font-size: 26px;
-    line-height: 1.62;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    max-width: 660px;
   }
 }
 
 .hero-btn {
   padding: 10px 32px;
-  margin-top: 30px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 1199px) {

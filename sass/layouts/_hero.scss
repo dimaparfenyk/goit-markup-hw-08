@@ -34,32 +34,32 @@
   }
 }
 
-.hero-section-content {
-  @media screen and (max-width: 1199px) {
-    width: 360px;
-    margin: 0 auto;
-  }
-}
+// .hero-section-content {
+//   @media screen and (max-width: 1199px) {
+//     // width: 360px;
+//     margin: 0 auto;
+//   }
+// }
 .hero-title {
-  @media screen and (max-width: 1199px) {
-    font-size: 26px;
-    line-height: 1.62;
-  }
-
-  color: var(--main-text-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  max-width: 660px;
+  font-size: 26px;
+  line-height: 1.62;
   margin: 0px auto;
   text-align: center;
+  color: var(--main-text-color);
+  text-transform: uppercase;
+  max-width: 360px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    max-width: 660px;
+  }
 }
 
 .hero-btn {
   padding: 10px 32px;
-  margin-top: 30px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
 }
