@@ -29,12 +29,12 @@
   transform: scale(1) rotate(0) translate(-50%, -50%);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  width: 450px;
+  max-width: 450px;
   max-height: 609px;
   padding: 40px;
 
   @media screen and (min-width: 1200px) {
-    width: 528px;
+    max-width: 528px;
     max-height: 581px;
   }
 
