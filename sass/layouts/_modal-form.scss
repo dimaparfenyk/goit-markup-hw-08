@@ -11,11 +11,14 @@
   margin-bottom: 12px;
   font-weight: bold;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: #212121;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 23px;
+  }
 }
 
 .label {

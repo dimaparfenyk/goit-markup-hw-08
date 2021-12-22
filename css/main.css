@@ -1067,6 +1067,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
+  overflow: auto;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
@@ -1090,6 +1091,7 @@ a {
   transform: scale(1) rotate(0) translate(-50%, -50%);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 450px;
+  max-height: 609px;
   padding: 40px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1099,6 +1101,7 @@ a {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
+    max-height: 581px;
   }
 }
 
@@ -1137,10 +1140,16 @@ a {
   margin-bottom: 12px;
   font-weight: bold;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-title {
+    line-height: 23px;
+  }
 }
 
 .label {
