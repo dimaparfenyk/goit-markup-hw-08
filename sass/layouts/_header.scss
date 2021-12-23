@@ -208,6 +208,7 @@
 .header-socials-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .header-socials-item {
@@ -228,6 +229,7 @@
 //   margin-right: 10px;
 // }
 .header-social-link {
+  font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
