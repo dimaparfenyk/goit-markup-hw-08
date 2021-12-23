@@ -156,8 +156,8 @@
   flex-direction: column;
   margin: 0 auto;
 
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   z-index: 5;
 
   padding-top: 10px;
@@ -233,13 +233,6 @@
   letter-spacing: 0.02em;
 
   color: var(--accent-color);
-  // &:not(:last-child)::after {
-  //   content: ' ';
-  //   width: 22px;
-  //   height: 0px;
-  //   border: 1px solid rgba(33, 33, 33, 0.2);
-  //   margin-left: 10px;
-  // }
 }
 
 .mob-menu-close {
